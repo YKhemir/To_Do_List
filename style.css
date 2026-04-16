@@ -1,0 +1,14 @@
+body{
+    margin: 0%;
+}
+h1{
+    color:rgb(220, 59, 148);
+    background-color: rgb(148, 234, 243);
+    border-radius: 5px;
+    margin: 0% 0% 1% 0%;
+    text-align: center;
+    padding: 2%;
+}
+form{
+    text-align: center;
+}

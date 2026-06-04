@@ -1,6 +1,9 @@
 body{
     margin: 0%;
+    color: red;
+    background-color: lightblue;
 }
+
 h1{
     color:rgb(220, 59, 148);
     background-color: rgb(148, 234, 243);
@@ -9,6 +12,14 @@ h1{
     text-align: center;
     padding: 2%;
 }
+
 form{
     text-align: center;
+}
+
+#TasksPlace {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+    
 }

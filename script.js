@@ -1,12 +1,25 @@
 function addTask(){
-<<<<<<< HEAD
     let inputValue = document.getElementById('writeTask').value;
-    let task = document.createElement("p")
-    task.textContent =  inputValue;
+    let task = document.createElement("input");
+    task.type="checkbox";
+
+    if(inputValue === ""){
+        return;
+    }
+    // task.textContent =  inputValue; don't use for chekbox
+    let labelText = document.createElement("label");
+    labelText.textContent = inputValue
+    
+
     document.querySelector('#TasksPlace').appendChild(task);
-=======
-    document.querySelector('submit');
-    let task = document.createElement("p")
-    task.innerHTML =  "<p>La vie est belle</p>"
->>>>>>> bfa1db1cfa5423081601b69d113057e4e563b1db
+    document.querySelector('#TasksPlace').appendChild(labelText)
+
+    // create one element for checkbox and value 
+    let containerTasks = document.createElement('div');
+    containerTasks.appendChild(task);
+    containerTasks.appendChild(labelText)
+    document.querySelector('#TasksPlace').appendChild(containerTasks)
+
 }
+
+// if cocher element chekbox 
